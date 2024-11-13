@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+html {
+  font-size: 75%;
+}
+body {
+  background: #585858;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.container {
+  background: #212020;
+  padding: 3rem;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.img {
+  max-width: 40rem;
+  height: 50rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+.img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 2rem;
+}
+.container h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+
+.container h3 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
+.contact-list-container {
+  width: 100%;
+}
+.inputBox {
+  display: flex;
+  align-items: center;
+}
+.filterInput {
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.person {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.filterBtn {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(238, 114, 36);
+  font-weight: 600;
+  margin-left: 1rem;
+  width: 10rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.filterBtn:active {
+  transform: scale(0.9);
+}
+#contact-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.contact {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 1rem;
+  }
+  .container {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .img {
+    max-width: 54rem;
+    height: 20rem;
+    border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 52%;
+  }
+}
